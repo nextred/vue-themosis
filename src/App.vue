@@ -32,7 +32,7 @@
         <div class="center">{{ title }}</div>
       </v-ons-toolbar -->
       <v-ons-toolbar :style="swipeTheme">
-        <div class="center">Swiping Tab Bar</div>
+        <div class="center">TestApp</div>
       </v-ons-toolbar>
       <v-ons-tabbar swipeable tab-border position="top"
         :tabs="tabs"

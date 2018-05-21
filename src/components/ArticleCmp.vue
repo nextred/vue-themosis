@@ -4,11 +4,11 @@
       <div class="row">
         <div class="col-sm-6 ">
           <div class="img-div">
-            <!--img v-bind:src = "article.multimedia[0].url" /-->
+            <!--img v-bind:src = "article['_embedded']['wp:featuredmedia'][0]['source_url']" /-->
             <clazy-load src="https://baconmockup.com/400/400/">
               <transition name="fade">
                 <!-- img v-bind:src="article.multimedia[0].url" -->
-                <img v-bind:src="article._embedded['wp:featuredmedia'][0].source_url">
+                <img v-bind:src="article['_embedded']['wp:featuredmedia'][0]['source_url']">
               </transition>
               <transition name="fade" slot="placeholder">
                 <div slot="placeholder">

@@ -3,7 +3,7 @@
     <div class="hello">
       {{msg}}
       <div v-for = "post in articles" v-bind:key="post.id" v-if = "articles !== null">
-        <artcile-cmp v-bind:article = "post" v-if = "post._embedded['wp:term'][0].slug == 2"></artcile-cmp>
+        <artcile-cmp v-bind:article = "post" ></artcile-cmp>
       </div>
       <div v-if = "articles === null">
         <i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i>
