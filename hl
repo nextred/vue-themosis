@@ -1,0 +1,44 @@
+ <!-- v-touch v-on:swipe="swipeHandler">
+      <img src="./assets/logo.png">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBarId" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img alt="Brand" src="./assets/logo.png" class="brand">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navBarId">
+            <ul class="nav navbar-nav">
+              <li><a href="#" ><router-link to = "/politique">Poltique</router-link></a></li>
+              <li><a href="#" ><router-link to = "/culture">Culture</router-link></a></li>
+              <li><a href="#" ><router-link to = "/sport">Sport</router-link></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      <router-view/>
+    </v-touch -->
+
+
+    swipeHandler (direction) {
+      var path = this.$route.name
+      var index = this.routes.indexOf(path)
+      if (direction.direction === 4) {
+        console.log(index)
+        if (index !== 0) {
+          // this.$router.push(this.routes[index - 1])
+        }
+      } else {
+        console.log(index)
+        if (index !== 2) {
+          // this.$router.push(this.routes[index + 1])
+        }
+      }
+    },
