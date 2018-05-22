@@ -19,7 +19,7 @@ export default new Router({
     },
     {
       path: '/sport',
-      name: 'pport',
+      name: 'sport',
       component: Sport
     },
     {

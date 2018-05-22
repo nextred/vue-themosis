@@ -31,6 +31,7 @@ export default {
   name: 'App',
   data () {
     return {
+      routers: ['politique', 'culture', 'sport'],
       activeIndex: 0,
       colors: red,
       animationOptions: {},
@@ -55,6 +56,7 @@ export default {
   },
   methods: {
     onSwipe (index, animationOptions) {
+      // const routers = ['politique', 'culture', 'sport']
       // Apply the same transition as v-ons-tabbar
       this.animationOptions = animationOptions
       // Interpolate colors
@@ -62,6 +64,8 @@ export default {
       const b = Math.ceil(index)
       const ratio = index % 1
       this.colors = this.colors.map((c, i) => lerp(this.tabs[a].theme[i], this.tabs[b].theme[i], ratio))
+      // this.$router.push(this.routers[index])
+      // console.log(this.routers[index])
     }
   },
   computed: {

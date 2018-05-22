@@ -27,7 +27,7 @@ export default {
     }
   },
   mounted () {
-    this.$http.get('http://localhost/wordpress/wp-json/wp/v2/posts?_embed')
+    this.$http.get('http://my-website.dev/wp-json/wp/v2/posts?_embed')
       .then(response => { this.articles = response.data })
   }
 }

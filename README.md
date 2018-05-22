@@ -1,6 +1,19 @@
-# themo_vue
+# Onsen UI + Vue + Axios + WP REST API Project
 
-> vuejs learning
+
+## List of features implemented in this project
+1. Browse horizontal categories menu using swipe feature
+3. component creation 
+4. WP-REST API consumption using `axios`
+
+-------------------------------
+
+## Dependencies 
+- [onsenui](https://github.com/OnsenUI/OnsenUI)
+- [vue](https://github.com/vuejs/vue)
+- [vue-onsenui](https://github.com/OnsenUI/OnsenUI/tree/master/bindings/vue)
+- [axios](https://github.com/mzabriskie/axios)
+
 
 ## Build Setup
 
@@ -16,7 +29,3 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-"# vue-test" 
